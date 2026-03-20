@@ -1,22 +1,20 @@
-title: Your awesome title
-author: GitHub User
-email: your-email@domain.com
+title: Mia Gobble's Blog
+author: Mia Gobble
+email: miagobble@duck.com
 description: > # this means to ignore newlines until "twitter_username:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  A simple blog for me to share my thoughts on Roblox development.
 
 # social links
-twitter_username: jekyllrb
-github_username:  jekyll
-rss: rss
+twitter_username: iGottic_Real
+github_username:  MiaGobble
+# rss: rss
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
 # instagram_username: jekyll
 # linkedin_username: jekyll
 # pinterest_username: jekyll
-# youtube_username: jekyll
+youtube_username: iGottic
 # googleplus_username: +jekyll
 
 # Mastodon instances
