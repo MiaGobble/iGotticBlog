@@ -4,15 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I'm Mia Gobble, a developer on Roblox. I've been making games and open-source stuff on the platform since 2014!
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+I made this blog as a way to document my takes, views, and opinions on various technical parts of Roblox development. I find that I would repeat myself to strangers a lot of the time when they would talk about the same topics, and so having the ability to instead link my thoughts seems nicer.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+There are no plans to really advertise this blog anywhere, but exists for those who care about it :)
