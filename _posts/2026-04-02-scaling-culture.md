@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Scaling a positive culture in a Roblox dev Discord... can we do it?"
-categories: social, community
+url: /scaling-culture/
+description: Can you make a Roblox development Discord server relevant and still non-toxic? Possibly.
 ---
 
 The other day I approached a friend of mine with what seemed like a simple idea: make a public, large-scale Roblox developer server with a culture that encourages kindness, shuns ego and hostility, and allows mature discussion. I already own a gatekept Discord server named "Devvit", which only allows vetted developers; in that server we crack down on toxicity, bigotry, etc, and as a result we have been able to maintain a healthy, active community with a reputation for being friendly.

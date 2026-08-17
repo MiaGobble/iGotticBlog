@@ -1,0 +1,16 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img class="brand-logo" src="{{ '/assets/images/logo.png' | relative_url }}" alt="iGottic" width="220" height="70">
+      <span class="brand-mark">Blog</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav">
+      <a class="nav-link{% if page.layout == 'home' or page.url == '/' %} is-active{% endif %}" href="{{ '/' | relative_url }}">Posts</a>
+      <a class="nav-link" href="https://github.com/MiaGobble" rel="noopener">Open-Source</a>
+      <a class="nav-link" href="https://igottic.com" rel="noopener">Portfolio</a>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  {%- include head.html -%}
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    {%- include filters.html -%}
+    <a class="skip-link" href="#content">Skip to content</a>
+    {%- include header.html -%}
+    <main id="content" class="site-main">
+      <div class="inner">
+        {{ content }}
+      </div>
+    </main>
+    {%- include footer.html -%}
+    <script src="{{ '/assets/js/site.js' | relative_url }}"></script>
+  </body>
+</html>

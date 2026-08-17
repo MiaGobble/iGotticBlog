@@ -1,0 +1,54 @@
+title: Mia Gobble's Blog
+theme: null
+author:
+  name: Mia Gobble
+  email: miagobble@duck.com
+  twitter: iGottic_Real
+description: Takes, views, and opinions on Roblox development, production, and the culture around making games.
+url: "https://blog.igottic.com"
+baseurl: ""
+lang: en
+logo: /assets/images/logo.png
+twitter:
+  username: iGottic_Real
+  card: summary_large_image
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+permalink: /:title/
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+feed:
+  title: Mia Gobble's Blog
+social:
+  name: Mia Gobble
+  links:
+    - https://x.com/iGottic_Real
+    - https://github.com/MiaGobble
+    - https://www.linkedin.com/in/mia-gobble/
+    - https://www.youtube.com/c/iGotticDev
+    - https://soundcloud.com/igottic
+    - https://www.roblox.com/users/66342641/profile
+    - https://igottic.com
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /assets/images/og.png
+        width: 1200
+        height: 630
+        alt: iGottic — Mia Gobble's Blog
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - Resources

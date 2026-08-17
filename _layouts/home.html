@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <div class="hero-copy">
+    <h1 class="hero-title reveal" data-reveal="wipe-diagonal">I have opinions</h1>
+    <div class="home-intro reveal" data-reveal="wipe-right" data-delay="140">
+      {{ content }}
+    </div>
+  </div>
+  <div class="hero-portrait reveal" data-reveal="wipe-reverse-diagonal" data-delay="80">
+    <div class="portrait-frame">
+      <img src="{{ '/assets/images/charactersketch.png' | relative_url }}" alt="Hand-drawn sketch of Mia" width="520" height="640">
+      <span class="smoke" aria-hidden="true"></span>
+      <span class="smoke smoke-b" aria-hidden="true"></span>
+      <span class="smoke smoke-c" aria-hidden="true"></span>
+    </div>
+  </div>
+</section>
+
+<svg class="squiggle reveal" data-reveal="wipe-right" viewBox="0 0 800 40" preserveAspectRatio="none" aria-hidden="true">
+  <path class="squiggle-path" d="M2 22 C 60 6, 110 34, 170 18 S 280 8, 340 24 S 470 36, 540 16 S 680 8, 798 22"/>
+</svg>
+
+<section class="post-index" aria-label="Posts">
+  {%- assign posts = site.posts -%}
+  {%- if posts.size == 0 -%}
+    <p class="lead">Nothing published yet.</p>
+  {%- else -%}
+    <ul class="post-list">
+      {%- for post in posts -%}
+        <li class="post-card reveal" data-reveal="fade-up" data-delay="{{ forloop.index0 | times: 80 }}">
+          <article>
+            <p class="post-date">
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+            </p>
+            <h2 class="post-card-title">
+              <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </h2>
+            <p class="excerpt">{{ post.content | markdownify | strip_html | truncate: 240 }}</p>
+            <a class="btn" href="{{ post.url | relative_url }}">Read</a>
+          </article>
+        </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+</section>

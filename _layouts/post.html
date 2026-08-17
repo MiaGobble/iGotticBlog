@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+  <header class="post-hero">
+    <p class="post-date reveal" data-reveal="wipe-right">
+      <a href="{{ '/' | relative_url }}">← Posts</a>
+      <span class="dot">·</span>
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
+    </p>
+    <h1 class="post-title reveal" data-reveal="wipe-diagonal" itemprop="headline">{{ page.title | escape }}</h1>
+  </header>
+
+  <svg class="squiggle reveal" data-reveal="wipe-right" viewBox="0 0 800 40" preserveAspectRatio="none" aria-hidden="true">
+    <path class="squiggle-path" d="M2 22 C 60 6, 110 34, 170 18 S 280 8, 340 24 S 470 36, 540 16 S 680 8, 798 22"/>
+  </svg>
+
+  <div class="post-body reveal" data-reveal="wipe-right" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <nav class="post-pager" aria-label="Adjacent posts">
+    {%- if page.previous -%}
+      <a class="pager-link reveal" data-reveal="fade-up" href="{{ page.previous.url | relative_url }}">
+        <span class="pager-label">Older</span>
+        <span class="pager-title">{{ page.previous.title | escape }}</span>
+      </a>
+    {%- else -%}
+      <span></span>
+    {%- endif -%}
+    {%- if page.next -%}
+      <a class="pager-link next reveal" data-reveal="fade-up" href="{{ page.next.url | relative_url }}">
+        <span class="pager-label">Newer</span>
+        <span class="pager-title">{{ page.next.title | escape }}</span>
+      </a>
+    {%- endif -%}
+  </nav>
+</article>
